@@ -51,6 +51,7 @@ body {
 .pattern .card_item {
   float: left;
   width: calc(33.333% - 60px);
+  width: calc(100%);
   margin: 0 25px 35px 0;
   background-color: #224;
   height: 320px;

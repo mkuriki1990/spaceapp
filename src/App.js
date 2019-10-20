@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './bootstrap/css/bootstrap-grid.css';
 import Card from './card';
 import Detail from './detail';
 
@@ -60,13 +61,27 @@ class App extends React.Component {
               Buy Your Orbital Land
             </header>
             <div className="card pattern">
-              <Card idx={0} item={this.state.item} sel={this.sel.bind(this)} />
-              <Card idx={1} item={this.state.item} sel={this.sel.bind(this)} />
-              <Card idx={2} item={this.state.item} sel={this.sel.bind(this)} />
+            <div class="row row-offcanvas row-offcanvas-right">
+              <div class="col-xs-12 col-lg-4">
+                <Card idx={0} item={this.state.item} sel={this.sel.bind(this)} />
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <Card idx={1} item={this.state.item} sel={this.sel.bind(this)} />
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <Card idx={2} item={this.state.item} sel={this.sel.bind(this)} />
+              </div>
+              <div class="col-xs-12 col-lg-4">
 
-              <Card idx={0} item={this.state.item} sel={this.sel.bind(this)} />
-              <Card idx={1} item={this.state.item} sel={this.sel.bind(this)} />
-              <Card idx={2} item={this.state.item} sel={this.sel.bind(this)} />
+                <Card idx={0} item={this.state.item} sel={this.sel.bind(this)} />
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <Card idx={1} item={this.state.item} sel={this.sel.bind(this)} />
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <Card idx={2} item={this.state.item} sel={this.sel.bind(this)} />
+              </div>
+              </div>
             </div>
           </div>
         );
